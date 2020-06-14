@@ -10,6 +10,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
     <script
       src="https://kit.fontawesome.com/9e8efbc3d2.js"
       crossorigin="anonymous"
@@ -18,22 +22,22 @@
     <title>BookRoll | Remote Bookkeeping and Payroll Services</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-md bg-navbar">
       <a class="navbar-brand" href="index.html">
         <img
-          src="images/bookroll_logo_placeholder.png"
+          src="assets/images/bookroll_logo_placeholder.png"
           width="40"
           height="30"
-          class="d-inline-block align-top"
+          class="d-inline-block align-top logo"
           alt=""
         />
         BookRoll
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a href="#" class="nav-link">Home</a>
           </li>
@@ -52,7 +56,21 @@
         </ul>
       </div>
     </nav>
-    <header></header>
+    <header>
+      <div class="hero-image-container">
+        <img
+          src="assets/images/bookroll_hero_image.png"
+          class="hero-image"
+          alt=""
+        />
+        <div class="row justify-content-center welcome-row">
+          <div class="col-10 welcome-col">
+            <h1>Welcome To BookRoll</h1>
+            <h3>We are an online payroll and bookeeping service</h3>
+          </div>
+        </div>
+      </div>
+    </header>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
