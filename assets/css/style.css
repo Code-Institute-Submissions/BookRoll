@@ -1,12 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700");
+
+body {
+  color: #fafafa;
+  font-family: "Raleway";
+}
+
 /*---------------------------Colors*/
 .bg-navbar {
-  background-color: #466060;
+  background-color: #fafafa;
+}
+
+.bg-welcome {
+}
+
+.bg-about {
+  background-color: #de6e4b;
+}
+
+.bg-services {
+  background-color: #0a3445;
+}
+
+.bg-footer {
+  background-color: #0a3445;
 }
 
 /*---------------------------Navbar*/
 .nav-link,
 .navbar-brand {
-  color: #fafafa;
+  color: #de6e4b;
 }
 
 .logo {
@@ -23,12 +45,12 @@
 }
 
 .navbar-toggler {
-  color: #fafafa;
+  color: #de6e4b;
 }
 /*maybe move these if they are used elsewhere*/
 a:hover,
 i:hover {
-  color: #de6e4b;
+  color: #;
 }
 
 button:focus {
@@ -66,6 +88,57 @@ button:focus {
   vertical-align: middle;
   text-align: center;
 }
+
+/*-----------------------About Us*/
+
+.about-content {
+  color: #000;
+  background-color: #fafafa;
+  display: block;
+  margin: auto;
+  border: 10px solid #fafafa;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 15px #000;
+}
+
+/*-----------------------Services*/
+.services-heading {
+  color: #fafafa;
+  text-align: center;
+}
+
+.services-content-container {
+  background-color: #085a5c;
+  border: 10px solid #085a5c;
+  border-radius: 10px;
+  margin: 0 5px 20px;
+  box-shadow: 0px 0px 15px #000;
+}
+
+.services-content h4 {
+  text-align: center;
+}
+
+.logos_container {
+  background-color: #fafafa;
+}
+
+.logos {
+  margin: 10px 0;
+}
+.sage,
+.brightpay,
+.kashflow,
+.quickbooks,
+.swiftsoft,
+.xero {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+/*-----------------------Footer*/
 
 /*-------------------Media Queries*/
 @media (min-width: 768px) {
