@@ -129,6 +129,11 @@ body {
   margin-left: 0;
 }
 
+.about-content p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
 /*-----------------------Services*/
 
 .services-content-container {
