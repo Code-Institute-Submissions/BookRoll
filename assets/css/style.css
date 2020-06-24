@@ -17,6 +17,11 @@ body {
   margin: 0;
 }
 
+.btn {
+  margin: 0 auto;
+  display: block;
+}
+
 /*---------------------------Colors*/
 .bg-navbar {
   background-color: #fafafa;
@@ -34,11 +39,11 @@ body {
 }
 
 .bg-testimonials {
-  background-color: #fc7a57;
+  background-color: #ec9a49;
 }
 
 .bg-footer {
-  background-color: #0a3445;
+  background-color: #19607d;
 }
 
 /*---------------------------Navbar*/
@@ -67,15 +72,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-/*maybe move these if they are used elsewhere*/
-a:hover,
-i:hover {
-  color: #;
-}
-
-button:focus {
-  outline: none;
 }
 
 /*---------------------Hero Header*/
@@ -112,13 +108,25 @@ button:focus {
 
 /*-----------------------About Us*/
 
+.founder-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.founder {
+  position: absolute;
+  height: 100%;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+}
+
 .about-content {
   color: #000;
   background-color: #fafafa;
   display: block;
   margin: auto;
-  border: 10px solid #fafafa;
-  box-shadow: 0px 15px 20px 0 rgba(0, 0, 0, 0.25);
+  margin-left: 0;
 }
 
 /*-----------------------Services*/
@@ -131,11 +139,18 @@ button:focus {
 
 .services-content {
   color: #343a40;
+  background-color: #f3f3f3;
 }
 
 .services-content h4 {
+  font-size: 1.5em;
   text-align: center;
+  padding: 0.5em 0;
   margin-top: 0.5rem;
+}
+
+.services-content li {
+  font-size: 1em;
 }
 
 .services-img-container {
@@ -144,7 +159,7 @@ button:focus {
 
 .services-img {
   width: 100%;
-  min-height: 370px;
+  overflow: hidden;
 }
 
 .logos_container {
@@ -172,9 +187,14 @@ button:focus {
   background-color: rgba(#000, 0.4);
 }
 
+.author {
+  bottom: 0;
+}
+
 .avatar {
   border: 0.1rem solid rgba(#fff, 0.3);
-  max-width: 3rem;
+  width: 4rem;
+  height: auto;
 }
 
 /*--------------------------Contact*/
@@ -192,6 +212,16 @@ button:focus {
   }
 }
 
+@media (min-width: 1200px) {
+  .services-content h4 {
+    font-size: 1.7em;
+  }
+
+  .services-content li {
+    font-size: 1.2em;
+  }
+}
+
 @media (max-width: 768px) {
   .gmap {
     height: 25rem;
@@ -199,16 +229,62 @@ button:focus {
 }
 
 @media (max-width: 991px) {
+  .founder,
+  .founder-container {
+    display: none;
+  }
+
+  .about-content {
+    margin-left: auto;
+  }
+
   .card-3 {
     display: none;
+  }
+
+  .services-rel {
+    position: relative;
   }
 
   .services-content {
     position: absolute;
     z-index: 1;
     margin: auto;
-    background: rgba(255, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     color: #fafafa;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .services-content h4 {
+    font-size: 2em;
+  }
+
+  .services-content li {
+    font-size: 1.6em;
+  }
+
+  .services-img-container {
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .services-img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 482px) {
+  .services-content h4 {
+    font-size: 1.6em;
+  }
+
+  .services-content li {
+    font-size: 1.3em;
   }
 }
 
