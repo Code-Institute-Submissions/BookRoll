@@ -1,75 +1,91 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      rel="stylesheet"
       crossorigin="anonymous"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/9e8efbc3d2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>BookRoll | Remote Bookkeeping and Payroll Services</title>
   </head>
   <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html">
         <img
-          src="assets/images/bookroll_logo_placeholder.png"
           width="40"
           height="30"
           class="d-inline-block align-top logo"
           alt=""
+          src="assets/images/bookroll_logo_placeholder.png"
         />
         BookRoll
       </a>
       <button
         class="navbar-toggler"
-        type="button"
-        data-toggle="dropdown"
-        data-target="#menu"
-        aria-controls="menu"
         aria-expanded="false"
+        aria-controls="menu"
         aria-label="Toggle navigation"
+        type="button"
+        data-target="#menu"
+        data-toggle="dropdown"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ml-auto mt-2 mt-md-0">
           <li class="nav-item active">
-            <a href="#home" class="nav-link">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a href="#services" class="nav-link">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#contacts" class="nav-link">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
+    <!--HEADER-->
     <header id="home">
       <div class="hero-image-container">
         <img
-          src="assets/images/bookroll_hero_image.png"
           class="hero-image"
           alt=""
+          src="assets/images/bookroll_hero_image.png"
         />
         <div class="row justify-content-center welcome-row">
           <div class="col-10 bg-welcome welcome-col">
@@ -79,11 +95,11 @@
         </div>
       </div>
     </header>
-    <section class="container-fluid bg-about padding-top" id="about">
-      <div class="row justify-content-center">
+    <!--ABOUT-->
+    <section class="pt-3 pb-3 bg-about" id="about">
+      <div class="row justify-content-center pb-3">
         <div class="col section-heading">
           <h2>About</h2>
-          <i class="fas fa-angle-down"></i>
         </div>
       </div>
       <div class="row">
@@ -108,100 +124,282 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid bg-services padding-top" id="services">
-      <div class="row justify-content-center">
+    <!--SERVICES-->
+    <section class="pt-3 bg-services" id="services">
+      <div class="row justify-content-center pb-3">
         <div class="col section-heading">
-          <h2>Services</h2>
-          <i class="fas fa-angle-down"></i>
+          <h2 class="text-dark">Services</h2>
         </div>
       </div>
-      <div class="row justify-content-center padding-bottom">
-        <div class="col-10 services-content-container">
-          <div class="row">
-            <div class="col-sm-6 services-content">
-              <h4><i class="fas fa-money-bill-wave-alt"></i> Payroll</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="col-sm-6 services-content">
-              <h4><i class="fas fa-book-open"></i> Bookkeeping</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-10 services-content">
+          <h4>
+            <i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>
+            Payroll
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 services-img-container">
+          <img class="services-img" src="assets/images/employees.jpg" alt="" />
         </div>
       </div>
-      <div class="row logos_container">
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/quickbooks.png" alt="" class="quickbooks" />
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 services-img-container">
+          <img
+            class="services-img"
+            src="assets/images/bookkeeping.jpg"
+            alt=""
+          />
         </div>
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/Kashflow.png" alt="" class="kashflow" />
-        </div>
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/Sage_logo.png" alt="" class="sage" />
-        </div>
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/BrightPay.png" alt="" class="brightpay" />
-        </div>
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/swiftsoft.png" alt="" class="swiftsoft" />
-        </div>
-        <div class="col-sm-6 col-md-4 logos">
-          <img src="assets/images/xero.png" alt="" class="xero" />
+        <div class="col-lg-6 col-md-10 services-content">
+          <h4>
+            <i class="fas fa-book-open" aria-hidden="true"></i> Bookkeeping
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
     </section>
-    <section
-      class="container-fluid bg-testimonials padding-top"
-      id="testimonials"
-    >
-      <div class="row justify-content-center">
-        <div class="row" id="testimonials">
-          <div class="col section-heading">
-            <h2>Testimonials</h2>
-            <i class="fas fa-angle-down"></i>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10 testimonial-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+    <!--TECHNOLOGY LOGOS-->
+    <section class="text-center">
+      <div class="row pt-3 pb-3">
+        <div class="col">
+          <div class="row logos_container">
+            <div class="col-sm-6 col-md-4 logos">
+              <img
+                class="quickbooks"
+                alt=""
+                src="assets/images/quickbooks.png"
+              />
+            </div>
+            <div class="col-sm-6 col-md-4 logos">
+              <img class="kashflow" alt="" src="assets/images/Kashflow.png" />
+            </div>
+            <div class="col-sm-6 col-md-4 logos">
+              <img class="sage" alt="" src="assets/images/Sage_logo.png" />
+            </div>
+            <div class="col-sm-6 col-md-4 logos">
+              <img class="brightpay" alt="" src="assets/images/BrightPay.png" />
+            </div>
+            <div class="col-sm-6 col-md-4 logos">
+              <img class="swiftsoft" alt="" src="assets/images/swiftsoft.png" />
+            </div>
+            <div class="col-sm-6 col-md-4 logos">
+              <img class="xero" alt="" src="assets/images/xero.png" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container-fluid bg-contact" id="contact">
-      <div class="row justify-content-center">
+    <!--TESTIMONIALS-->
+    <section id="testimonials">
+      <div
+        class="row justify-content-center container-fluid bg-testimonials pt-3 pb-3"
+      >
+        <div class="col section-heading">
+          <h2>Testimonials</h2>
+        </div>
         <div class="row">
-          <div class="col section-heading">
-            <h2>Contact</h2>
-            <i class="fas fa-angle-down"></i>
+          <div class="col-12 col-md-6 col-lg-4 pt-3">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg"
+                alt="Bologna"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-center"
+              >
+                <blockquote class="blockquote text-right">
+                  <p>
+                    "The haunting of history is ever present in Barcelona. I see
+                    cities as organisms, as living creatures. To me, Madrid is a
+                    man and Barcelona is a woman. And it's a woman who's
+                    extremely vain."
+                  </p>
+                </blockquote>
+                <div class="author d-flex align-items-center">
+                  <img
+                    class="avatar rounded-circle mx-2"
+                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
+                    alt="Bologna"
+                  />
+                  Carlos Ruiz Zafon
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 pt-3">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg"
+                alt="Bologna"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-center"
+              >
+                <blockquote class="blockquote text-right">
+                  <p>
+                    "The haunting of history is ever present in Barcelona. I see
+                    cities as organisms, as living creatures. To me, Madrid is a
+                    man and Barcelona is a woman. And it's a woman who's
+                    extremely vain."
+                  </p>
+                </blockquote>
+                <div class="author d-flex align-items-center">
+                  <img
+                    class="avatar rounded-circle mx-2"
+                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
+                    alt="Bologna"
+                  />
+                  Carlos Ruiz Zafon
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 card-3 pt-3">
+            <div class="card">
+              <img
+                class="card-img"
+                src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-3.jpg"
+                alt="Bologna"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-center"
+              >
+                <blockquote class="blockquote text-right">
+                  <p>
+                    "The haunting of history is ever present in Barcelona. I see
+                    cities as organisms, as living creatures. To me, Madrid is a
+                    man and Barcelona is a woman. And it's a woman who's
+                    extremely vain."
+                  </p>
+                </blockquote>
+                <div class="author d-flex align-items-center">
+                  <img
+                    class="avatar rounded-circle mx-2"
+                    src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/robert.jpg"
+                    alt="Bologna"
+                  />
+                  Carlos Ruiz Zafon
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!--CONTACT-->
+    <section class="container-fluid bg-contact" id="contact">
+      <div class="row justify-content-center pt-3">
+        <div class="col section-heading">
+          <h2 class="text-dark">Contact</h2>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col-12 col-md-6">
+          <form class="contact-form" action="index.html" method="post">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword4"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-6 pt-3 gmap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74500.09569554428!2d-7.691440716481742!3d54.30168743696782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485e443c34ee31e9%3A0xd67736d553e9274f!2s87%20Swanlinbar%20Rd%2C%20Enniskillen!5e0!3m2!1sen!2suk!4v1592930842240!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
     <footer class="container-fluid bg-footer">
       <div class="row">
         <div class="col-4">
@@ -215,20 +413,21 @@
         </div>
       </div>
     </footer>
+    <!--JS IMPORTS-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     ></script>
   </body>
 </html>

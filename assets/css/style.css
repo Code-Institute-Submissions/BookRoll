@@ -3,6 +3,7 @@
 /*---------------------------Global*/
 body {
   color: #fafafa;
+  background-color: #fafafa;
   font-family: "Raleway";
 }
 
@@ -12,12 +13,8 @@ body {
   margin-top: 10px;
 }
 
-.padding-top {
-  padding-top: 15px;
-}
-
-.padding-bottom {
-  padding-bottom: 15px;
+.row {
+  margin: 0;
 }
 
 /*---------------------------Colors*/
@@ -29,15 +26,15 @@ body {
 }
 
 .bg-about {
-  background-color: #0a3445;
+  background-color: #19607d;
 }
 
 .bg-services {
-  background-color: #0a3445;
+  background-color: #fafafa;
 }
 
 .bg-testimonials {
-  background-color: #de6e4b;
+  background-color: #fc7a57;
 }
 
 .bg-footer {
@@ -48,7 +45,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 0 5px 0 #000;
 }
 
@@ -132,8 +129,22 @@ button:focus {
   box-shadow: 0px 15px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
+.services-content {
+  color: #343a40;
+}
+
 .services-content h4 {
   text-align: center;
+  margin-top: 0.5rem;
+}
+
+.services-img-container {
+  padding: 0;
+}
+
+.services-img {
+  width: 100%;
+  min-height: 370px;
 }
 
 .logos_container {
@@ -155,7 +166,20 @@ button:focus {
   margin: auto;
 }
 
-/*-----------------------Footer*/
+/*--------------------Testimonials*/
+
+.card-img-overlay {
+  background-color: rgba(#000, 0.4);
+}
+
+.avatar {
+  border: 0.1rem solid rgba(#fff, 0.3);
+  max-width: 3rem;
+}
+
+/*--------------------------Contact*/
+
+/*--------------------------Footer*/
 
 /*-------------------Media Queries*/
 @media (min-width: 768px) {
@@ -165,6 +189,26 @@ button:focus {
   }
   .nav-item {
     margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .gmap {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-3 {
+    display: none;
+  }
+
+  .services-content {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    background: rgba(255, 0, 0, 0.5);
+    color: #fafafa;
   }
 }
 
